@@ -1,10 +1,19 @@
 {
-  "name": "npm-base",
+  "name": "@waiting/egg-fetch",
   "author": "waiting",
   "version": "0.0.1",
-  "description": "npm boilerplate",
+  "description": "fetch for egg, midway",
+  "eggPlugin": {
+    "name": "fetch"
+  },
   "keywords": [
-    "种子项目",
+    "midway",
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "fetch",
+    "http",
+    "cookies",
     "typescript",
     "ts"
   ],
@@ -14,16 +23,16 @@
   "bin": {},
   "browser": "",
   "es2015": "",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.cjs.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "bugs": {
-    "url": "https://github.com/waitingsong/npm-base/issues"
+    "url": "https://github.com/waitingsong/egg-fetch/issues"
   },
-  "homepage": "https://github.com/waitingsong/npm-base#readme",
+  "homepage": "https://waitingsong.github.io/egg-fetch",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waitingsong/npm-base.git"
+    "url": "git+https://github.com/waitingsong/egg-fetch.git"
   },
   "license": "MIT",
   "nyc": {
@@ -48,7 +57,10 @@
     "all": true
   },
   "dependencies": {
-    "rxjs": "^6.5.2"
+    "@waiting/shared-core": "^3.0.0",
+    "@waiting/shared-types": "^1.0.0",
+    "rxjs": "^6.5.2",
+    "rxxfetch": "^2.1.0"
   },
   "devDependencies": {
     "@types/mocha": "*",
@@ -60,6 +72,7 @@
     "@waiting/eslint-config": "^2.1.0",
     "coveralls": "^3.0.5",
     "cross-env": "^5.2.0",
+    "egg": "^2.23.0",
     "eslint": "^6.2.0",
     "espower-typescript": "^9.0.2",
     "intelli-espower-loader": "^1.0.1",
